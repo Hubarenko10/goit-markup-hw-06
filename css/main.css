@@ -378,16 +378,18 @@ transition: transform var(--duration) var(--timing-function);
 	border-radius: 2px; 
 	outline: 2px solid var(--primary-text-color);
 	outline-offset: -2px;
-	transition: background-color 250ms ease-in;
+	transition: background-color var(--duration) var(--timing-function);
+				
 }
 .checkbox:checked+.custom-checkbox{
 	background-color: var(--accent-color);
-	
+	outline: none;
+	transition: outline var(--duration) var(--timing-function);
 }
 .custom-checkbox-icon{
 	fill: var(--primary-white-color);
 	opacity: 0;
-	transition: opacity 250ms ease-in;
+	transition: opacity var(--duration) var(--timing-function);
 }
 .checkbox:checked + .custom-checkbox .custom-checkbox-icon{
 	opacity: 1;
