@@ -232,7 +232,6 @@ transition: transform var(--duration) var(--timing-function);
 	background-color: var(--primary-white-color) ;
 	padding: 40px;
 	width: 528px;
-	/*height: 581px;*/
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -45%);
@@ -309,15 +308,13 @@ transition: transform var(--duration) var(--timing-function);
 	cursor: pointer;
 	transition: border-color var(--duration) var(--timing-function);
 }
-.form-input:hover,
-.form-input:focus{
-	border-color: var(--accent-color);
+.form-input:hover+.form-icon,
+.form-input:focus
+{
 	cursor: pointer;
+	color: var(--accent-color);
 }
-.form-icon:hover{
-	fill: var(--accent-color);
-	cursor: pointer;
-}
+
 
 
 .form-icon{
@@ -371,7 +368,7 @@ transition: transform var(--duration) var(--timing-function);
 	margin-right: 9px;
 	width: 16px;
 	height: 15px;
-	border-radius: 2px;
+	border-radius: 2px; 
 	outline: 2px solid var(--primary-text-color);
 	outline-offset: -2px;
 	transition: background-color 250ms ease-in;
