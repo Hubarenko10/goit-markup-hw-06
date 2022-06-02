@@ -257,7 +257,14 @@ transition: transform var(--duration) var(--timing-function);
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: transparent;
-
+	
+}
+.modal-btn-svg{
+transition: fill var(--duration) var(--timing-function);
+}
+.modal-btn:hover .modal-btn-svg
+{
+	fill: var(--accent-color) ;
 }
 /*modal-form*/
 .form-title{
@@ -280,9 +287,10 @@ transition: transform var(--duration) var(--timing-function);
 {
 	display: block;
 	position: relative;
+	margin: 0;
 }
 .form-group:not(:last-child){
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .form-label{
 	display: block;
@@ -295,8 +303,13 @@ transition: transform var(--duration) var(--timing-function);
 	letter-spacing: 0.01em;
 	padding: 0;
 	color: var(--secondary-text-color);
+	margin-bottom: 5px;
+}
+.form-input-box{
+	transform: translateY(0);
 }
 .form-input{
+	position: relative;
 	display: block;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -325,8 +338,7 @@ transition: transform var(--duration) var(--timing-function);
 .form-icon{
 	display: block;
 	position: absolute;
-	left: 15px;
-	top: 30px;
+	transform: translateY(100%);
 	fill: #212121;
 	transition: fill var(--duration) var(--timing-function);
 }
@@ -379,7 +391,6 @@ transition: transform var(--duration) var(--timing-function);
 	outline: 2px solid var(--primary-text-color);
 	outline-offset: -2px;
 	transition: background-color var(--duration) var(--timing-function);
-				
 }
 .checkbox:checked+.custom-checkbox{
 	background-color: var(--accent-color);
@@ -835,6 +846,7 @@ transition: transform var(--duration) var(--timing-function);
 	background-color: #2F303A;
 	padding: 15px 16px;
 	cursor: pointer;
+	color: var(--primary-white-color);
 }
 
 .footer-form-btn {

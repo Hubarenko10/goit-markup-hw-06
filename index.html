@@ -61,10 +61,10 @@
 					<div class="backdrop is-hidden" data-modal>
 						<div class="modal-wrapper">
 							<button class="modal-btn" type="button" data-modal-close>
-								<svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px">
+								<svg class="modal-btn-svg" fill="#000" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px">
 									<path
 										d="M11 1.108 9.892 0 5.5 4.392 1.108 0 0 1.108 4.392 5.5 0 9.892 1.108 11 5.5 6.608 9.892 11 11 9.892 6.608 5.5 11 1.108Z"
-										fill="#000"
+										fill=""
 									/>
 								</svg>
 							</button>
@@ -73,10 +73,12 @@
 								<!--данные пользователя-->
 								<label class="form-group">
 									<span class="form-label">Имя</span>
-									<input class="form-input" type="text" name="user-name">									
+									<div class="form-input-box">
+									<input class="form-input" type="text" name="user-name">								
 									<svg class="form-icon" width="12px" height="12px">
 										<use href="./images/symbol-defs.svg#icon-user"></use>
 									</svg>
+									</div>
 								</label>
 								
 									<label class="form-group">
