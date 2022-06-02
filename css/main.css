@@ -306,7 +306,7 @@ transition: fill var(--duration) var(--timing-function);
 	margin-bottom: 5px;
 }
 .form-input-box{
-	transform: translateY(0);
+	transform: translate(0) ;
 }
 .form-input{
 	position: relative;
