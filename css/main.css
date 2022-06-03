@@ -286,7 +286,6 @@ transition: fill var(--duration) var(--timing-function);
 .form-group
 {
 	display: block;
-	position: relative;
 	margin: 0;
 }
 .form-group:not(:last-child){
@@ -306,10 +305,9 @@ transition: fill var(--duration) var(--timing-function);
 	margin-bottom: 5px;
 }
 .form-input-box{
-	transform: translate(0) ;
+	position: relative;
 }
 .form-input{
-	position: relative;
 	display: block;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -338,7 +336,9 @@ transition: fill var(--duration) var(--timing-function);
 .form-icon{
 	display: block;
 	position: absolute;
-	transform: translateY(100%);
+	top:50%;
+	left: 5%;
+	transform: translate(-50%,-50%);
 	fill: #212121;
 	transition: fill var(--duration) var(--timing-function);
 }
